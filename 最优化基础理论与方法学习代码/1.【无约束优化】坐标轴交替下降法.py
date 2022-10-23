@@ -97,7 +97,6 @@ def plot_3D_figure(X1, X2, F, x_1_lst, x_2_lst,f_value_lst):  # 绘制三维图�
 
 
 if __name__ == "__main__":
-    gradient_modulus(3, 3)
     x1_opt, x2_opt, value, times, x_1_lst, x_2_lst, f_value_lst = coordinate_descent_method(-5, 7, 0.01)
     X1, X2, F = generate_grid(-10, 10, -10, 10, 0.05)  # 生成用于三维展示的函数面
     print("最优点坐标", x1_opt, ',', x2_opt)
