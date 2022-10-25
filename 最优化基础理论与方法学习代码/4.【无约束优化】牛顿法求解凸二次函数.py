@@ -14,8 +14,8 @@ from mpl_toolkits.mplot3d import Axes3D
 x1 = sp.Symbol('x1')
 x2 = sp.Symbol('x2')
 vector_x = np.array([[x1], [x2]])  # 定义二维变量（向量）
-mtx_A = np.matrix([[1, 1], [1, 2]])  # 目标函数的二次型矩阵
-f = np.array(vector_x.T*mtx_A*vector_x)[0][0]  # 目标函数 xT A x
+mtx_A = np.matrix([[2, 2], [2, 4]])  # 目标函数的二次型矩阵
+f = np.array(vector_x.T*(0.5*mtx_A)*vector_x)[0][0]  # 目标函数
 print(f)
 print(type(f))
 gx1 = sp.diff(f, x1)
