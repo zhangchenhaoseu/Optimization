@@ -75,7 +75,7 @@ def plot_2D_figure(X1, X2, F, x_1_lst, x_2_lst):  # 绘制二维图像并保存
     plt.contourf(X1, X2, F, 10)
     plt.colorbar(orientation='horizontal', shrink=0.8)
     plt.plot(x_1_lst, x_2_lst, c='r', linewidth=1.5)
-    plt.savefig('C://Users//张晨皓//Desktop//最优化基础理论与方法学习代码//图片//5.牛顿法2D求解三次函数.png')
+    plt.savefig('5.牛顿法2D求解四次函数.png')
     plt.show()
 
 
@@ -85,7 +85,7 @@ def plot_3D_figure(X1, X2, F, x_1_lst, x_2_lst,f_value_lst):  # 绘制三维图�
     p = ax.plot_surface(X1, X2, F, rstride=4, cstride=4, cmap='jet', alpha=0.8)
     ax.plot3D(x_1_lst, x_2_lst, f_value_lst, c='r', linewidth=1.5)
     plt.colorbar(p, shrink=0.8)
-    plt.savefig('C://Users//张晨皓//Desktop//最优化基础理论与方法学习代码//图片//5.牛顿法3D求解三次函数.png')
+    plt.savefig('5.牛顿法3D求解四次函数.png')
     plt.show()
 
 
